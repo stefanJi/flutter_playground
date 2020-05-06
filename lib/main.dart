@@ -6,6 +6,7 @@ import 'package:flutter_playground/widget/global_keys_demo.dart';
 import 'package:flutter_playground/widget/intervalprogress.dart';
 import 'package:flutter_playground/widget/localization_delegate.dart';
 import 'package:flutter_playground/widget/search_page.dart';
+import 'package:flutter_playground/widget/spinnies.dart';
 import 'package:flutter_playground/widget/wave_card.dart';
 
 void main() => runApp(MyApp());
@@ -34,6 +35,7 @@ List<Item> pages = [
           child: Text("Show Search"),
           onPressed: () => showSearch(context: ctx, delegate: Search())),
       desc: "Use SearchDelegate"),
+  Item("Nougat Animation", (_) => NougatAnimation(), desc: "Nougat")
 ];
 
 class MyApp extends StatelessWidget {
